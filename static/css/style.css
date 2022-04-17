@@ -85,7 +85,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: gold;
 }
 
 .post-title {
@@ -132,3 +132,4 @@ body {
     background: transparent;
     border: none;
 }
+
