@@ -49,12 +49,12 @@ body {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    height: 35vh;
     width: 100%;
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #bbbb23;
     color: white;
     position: relative;
 }
@@ -71,7 +71,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #bbbb23;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -121,14 +121,14 @@ body {
 }
 
 .btn-like {
-    color: #E84610;
+    color: #23BBBB;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #23BBBB;
     background: transparent;
     border: none;
 }
