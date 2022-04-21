@@ -1,11 +1,11 @@
 body {
-    background-color: #F9FAFC;
+    background-color: #fff;
 }
 
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.7rem;
-    font-weight: 800;
+    font-weight: 900;
     color: #23BBBB;
 }
 
@@ -44,7 +44,7 @@ body {
     text-transform: uppercase;
 }
 
-.masthead {
+.posthead {
     margin-top: 10px;
     overflow: hidden;
     position: relative;
@@ -53,18 +53,18 @@ body {
     width: 100%;
 }
 
-.masthead-text {
+.posthead-text {
     background-color: #bbbb23;
     color: white;
     position: relative;
 }
 
-.masthead-image {
+.posthead-image {
     position: relative;
     overflow: hidden;
 }
 
-.masthead-image:after {
+.posthead-image:after {
     content: "";
     position: absolute;
     top: 0;

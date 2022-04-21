@@ -1,17 +1,17 @@
 {% extends 'base.html' %} {% block content %}
 {% load crispy_forms_tags %}
 
-<div class="masthead">
+<div class="posthead">
     <div class="container">
         <div class="row g-0">
-            <div class="col-md-6 masthead-text">
-                <!-- Post title goes in these h1 tags -->
+            <div class="col-md-6 posthead-text">
+                <!--title of the posts -->
                 <h1 class="post-title">{{ post.title }}</h1>
-                <!-- Post author goes before the | the post's created date goes after -->
+                <!-- Author's post |  post's creation date -->
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
-                <!-- The featured image URL goes in the src attribute -->
+            <div class="d-none d-md-block col-md-6 posthead-image">
+                <!-- The featured image URL for posts goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
                 <img src="https://images.pexels.com/photos/262075/pexels-photo-262075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%">
                 {% else %}
@@ -63,7 +63,7 @@
                     <div class="col-1">
                         {% with comments.count as total_comments %}
                         <strong class="text-secondary"><i class="far fa-comments"></i>
-                            <!-- Our total_comments variable goes before the closing strong tag -->
+                            <!-- all_comments variable goes before the closing strong tag -->
                             {{ total_comments }}</strong>
                         {% endwith %}
                     </div>
@@ -80,27 +80,27 @@
         <div class="col-md-8 card mb-4  mt-3 ">
             <h3>Comments:</h3>
             <div class="card-body">
-                <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
+                
                 {% for comment in comments %}
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
-                        <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
+                        <!-- Name of commenter-->
                         {{ comment.name }}
                         <span class=" text-muted font-weight-normal">
-                            <!-- The comment's created date goes here -->
+                            <!-- date of created comment's -->
                             {{ comment.created_on }}
                         </span> wrote:
                     </p>
-                    <!-- The body of the comment goes before the | -->
+                    <!-- Full Content of the comment goes before the line| -->
                     {{ comment.body | linebreaks }}
                 </div>
-                <!-- Our for loop ends here -->
+                
                 {% endfor %}
             </div>
         </div>
         <div class="col-md-4 card mb-4  mt-3 ">
             <div class="card-body">
-                <!-- For later -->
+               
                 {% if commented %}
                 <div class="alert alert-success" role="alert">
                     Your comment is awaiting approval
