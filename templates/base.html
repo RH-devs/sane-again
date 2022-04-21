@@ -22,7 +22,7 @@
 
 <body class="d-flex flex-column h-100 main-bg">
 
-    <!-- Navigation -->
+    <!-- Navigation Menu-->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
@@ -39,16 +39,18 @@
                     {% if user.is_authenticated %}
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link text-black font-weight-bold" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                        <a class="nav-link text-black font-weight-bold" href="{% url 'account_signup' %}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link text-black font-weight-bold" href="{% url 'account_login' %}">Login</a>
                     </li>
-                
+                    <li class="nav-item text-black">
+                        <a class="nav-link text-black font-weight-bold" href="#">About</a>
+                    </li>
                     
                     {% endif %}
                 </ul>
@@ -76,14 +78,16 @@
         {% endblock content %}
     </main>
 
+  
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-0 text-center text-white">Sane Again</p>
+        <p class="m-0 text-center text-white">Copyright @ 2022 Rasheedat Ajiborisha</p>
         <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
             <i class="fab fa-twitter-square ms-3"></i>
             <i class="fab fa-instagram-square ms-3"></i>
             <i class="fab fa-youtube-square ms-3"></i></p>
     </footer>
+    
     <script>
         setTimeout(function () {
             let messages = document.getElementById('msg');
