@@ -103,22 +103,18 @@ Every page on this site also incorporates the following features:
 
 ### All users
 
-__Home__
+* Home
 
 The home page introduced users to the site with a different posts for them to select and it directs them to full post page to read. There is also navigation button of register and login to be able make comments.
 
 Here the both unregistered and registered users may view and read blogs posts created by the Admin. However, unregistered users can't make comments or like posts.
 
-__Register__
+* Register
 The registration page allows a user to register an account. To register a user is required provide a username, email and password. Validation has been added to form. The Registration page also provides a link to the Log In page if a user has already registered and simply needs to log in, once a user is registered , he or she is redirected to the log in page.
 
-__Log In__
+* Log In__
 
 The Log in page allows registered user to log in to their account in order to make comments and like posts. The Log In page also provides a link to the Registration page if a user hasn't yet registered.
-
-__Created Posts__
-
-This page displays a form to the user to enable them to create a new blog. The user first selects a category from a dropdown list, then enter the title of their blog, content,publish_date ,read_time, created_by and hashtags the content/text area allows up to 2000 words and is expandable. The user then clicks submit and their blog is saved in MongoDB and visible on the site. This page is not accessible to users that are not logged in.
 
 
 __Admin Only__
@@ -158,4 +154,54 @@ __Backend__
 * Power Mapper to check for browser compatibility
 * Kanban for Project Planning
 * Balsamiq wireframes - for planning of site flow, creating wire frames and general mind mapping
+
+## Testing
+
+* I tested the site in the following ways:
+
+* I used the inspector tool to test the site in all the screen sizes and devices available in the Chrome developer tool. In addition to this I also tested it on live devices, including but not limited to iPhone, iPad, MacBook Pro, MotoG7.
+
+* I also viewed my site in multiple browsers including, Chrome, Firefox and Safari in terms of design, responsiveness and functionality
+
+__Testing Tools__
+
+* HTML Validator - checking the validity of code
+* CSS Validator - checking the validity of code
+* JSHint- Testing and checking JS. - checking for errors in code
+* Pep8 Online - Testing and checking PEP8 compliance
+* Am I Responsive - checking whether the site is responsive.
+* DEV Tools - Lighthouse
+
+__Validation reports__
+
+All links were tested to ensure there were no broken links and that all links to external sites open in a new tab.
+In addition to testing with the inspector tool, real devices and validation tools, I also work through a series of test cases, to ensure that the site met the users stories and that any functionality that was added worked as intended.
+
+__User Story Test Cases__
+* New Visitors
+- As a new visitor to the website, I want to understand the purpose of the site and how to interact with it.
+The home page of the site features a title and an introduction with an explanation of the purpose of the site and how to interact with it.
+- As a new visitor to the website, I want to find blog posts and select which one to read without the need to register.
+- There should no requirement to register to view blog posts. 
+- As a new visitor to the website, I want to be able to register easily.
+- The should be navigation is clear and has a item named 'Register/Sign-up', when a user clicks on this nav item they are brought to a simple form, with clearly labelled fields, placehold text and a clearly marked 'Register/Sign-up' button.
+
+* Logged In Visitors
+- As a logged in visitor to the website, I want to be able to read across selected blog posts.
+- As a logged in visitor to the website, I want to be able to comment on blog posts.
+-  As a logged in visitor to the website, I want to be able to like blog posts.
+- As a logged in visitor to the website, I want to be given visual confirmation when I comment  that it has been sent for admin's approval.
+
+* Admin
+- As an admin, I want to be able to edit or delete any blogs to remove any inappropriate content. When an admin is logged in, the edit and delete buttons are available to them on all blogs allowing then to edit or delete any inappropriate blogs- an orange delete button is present to show its a blog not written by admin.
+- As an admin, I want to be able to easily add, edit or delete categories within in the site rather than having to access MongoDB.
+- When an admin is logged in a new nav item is added called Categories. Clicking on this page allows an admin to view exisiting catgories, as well as edit or delete them. Additionally there is an add category button allowing then to add a new category on the front end.
+
+__Functionality Test Cases__
+
+* Navigation:
+- While logged out, you can see all the nav links listed below for logged out and unregistered users:
+Home
+log in
+register
 
