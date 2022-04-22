@@ -138,8 +138,7 @@ __Languages & Frameworks__
 * Gitpod.io - for writing the code. Using the command line for committing and pushing to Git Hub
 * GitHub - hosting repositories
 * GIT - Pushing code to repositories
-* Django Summernotes
-* Bootstrap
+
 
 __Front End__
 
@@ -167,7 +166,6 @@ __Testing Tools__
 
 * HTML Validator - checking the validity of code
 * CSS Validator - checking the validity of code
-* JSHint- Testing and checking JS. - checking for errors in code
 * Pep8 Online - Testing and checking PEP8 compliance
 * Am I Responsive - checking whether the site is responsive.
 * DEV Tools - Lighthouse
@@ -190,18 +188,31 @@ The home page of the site features a title and an introduction with an explanati
 - As a logged in visitor to the website, I want to be able to read across selected blog posts.
 - As a logged in visitor to the website, I want to be able to comment on blog posts.
 -  As a logged in visitor to the website, I want to be able to like blog posts.
-- As a logged in visitor to the website, I want to be given visual confirmation when I comment  that it has been sent for admin's approval.
+- As a logged in visitor to the website, I want to be given visual confirmation when I comment that it has been sent for admin's approval.
 
 * Admin
-- As an admin, I want to be able to edit or delete any blogs to remove any inappropriate content. When an admin is logged in, the edit and delete buttons are available to them on all blogs allowing then to edit or delete any inappropriate blogs- an orange delete button is present to show its a blog not written by admin.
+- As an admin, I want to be able to approve or delete any comments. When an admin is logged in, the edit and delete buttons are available to them on all blogs allowing then to edit or delete any inappropriate comments.
 - As an admin, I want to be able to easily add, edit or delete categories within in the site rather than having to access MongoDB.
 - When an admin is logged in a new nav item is added called Categories. Clicking on this page allows an admin to view exisiting catgories, as well as edit or delete them. Additionally there is an add category button allowing then to add a new category on the front end.
 
 __Functionality Test Cases__
 
-* Navigation:
-- While logged out, you can see all the nav links listed below for logged out and unregistered users:
-Home
-log in
-register
+Navigation:
+* While logged out, you can see all the nav links listed below for logged out and unregistered users:
+- Home
+- log in
+- register
 
+## Lighthouse testing
+
+- Accessibility
+scored 84%
+
+- SEO
+scored 80%
+
+- Best practices
+scored 92%
+
+- Performances
+scored 95%

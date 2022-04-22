@@ -39,7 +39,7 @@ body {
 }
 
 .author {
-    color: white;
+    color: #23BBBB;
     margin: 4px;
     text-transform: uppercase;
 }
@@ -165,9 +165,3 @@ body {
     outline: none;
 }
 
-@media screen and (max-width: 600px) {
-
-    .text {
-        max-width: 80vw;
-    }
-}
