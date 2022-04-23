@@ -90,6 +90,9 @@ __Features Left to Implement__
 * Allow admins to block/suspend users when necessary.
 * follower feature
 * comments feature
+* Password Reset
+* Password Change
+* Email Verification
 * implement a better editor in the write a post page to ensure proper paragraghing/ design and possibly add symbols and image
 
 __Site implemented Features__
