@@ -134,11 +134,11 @@ __Languages & Frameworks__
 * CSS3 - Cascading style sheet used to style.
 * JavaScript - Programming language.
 * Python - Programming language
-* Favicon - was used for creating the favicon
 * Gitpod.io - for writing the code. Using the command line for committing and pushing to Git Hub
 * GitHub - hosting repositories
 * GIT - Pushing code to repositories
-
+* Django - framework
+* Bootstrap
 
 __Front End__
 
@@ -203,6 +203,22 @@ Navigation:
 - log in
 - register
 
+* Home:
+While user logged out, he/she will be able to see the following:
+- The navigation links
+- 6 paginated posts with images with informtion of the below:
+title post
+Created by
+published date
+- footer with quick links info , logo and copyright.
+* Login
+While logged in, make sure you can see all blogs and that any blogs that was created by you, now has the edit and delete button on them.
+while logged in , make sure you can see blogs written by you on your profile page.
+While logged in as an admin, make sure you can view all blogs and blog categories and that all categories blogs now have the edit and delete button. so the admin may delete inappropriate blogs created by users but may not edit blogs created by other users.
+admin can delete and approve comments created by him /her
+admin can also create and edit blog posts
+
+
 ## Lighthouse testing
 
 - Accessibility
@@ -217,7 +233,27 @@ scored 92%
 - Performances
 scored 95%
 
-Bugs
+__Bugs__
+
 During the development of this site I encountered a number of different bugs that have been now been fixed. A few notable bugs include the following:
 
-During testing it was highlighted that a user could enter empty spaces and submit the forms. I search online and adapted my code based on information using the pattern attribute class="validate" and ensuring all fields were required. users can see a small text message advising them on how to fill the form incase they have gotten it wrong
+During testing it was highlighted that a user could enter empty spaces and submit the forms. I search online and adapted my code based on information using the pattern attribute class="validate" and ensuring all fields were required. users can see a small text message advising them on how to fill the form incase they have gotten it wrong.
+
+## Technology Configuration
+
+Heroku Postgres
+Heroku Postgres was used as the database to store the users details to set up Heroku  follow the steps below
+
+- You will need to sign up to Heroku
+- Once logged in click the create new app button
+- Select the region closest to you and give the APP a name
+- Go to the addons box is just search for Postgres, Select the Hobby Dev - Free plan and click Provision:
+- Then add Heroku Postgres to your project.
+
+
+Go back to the cluster overview
+Click the CONNECT button.
+Select 'connect your application'
+Select your language/ driver (I used Python 3.6 or later)
+Copy the connection string and change the details.
+Set the cluster name, collection name, URI connection string and password as environmental - see Configuration to set up your application configurations
