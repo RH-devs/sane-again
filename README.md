@@ -216,3 +216,8 @@ scored 92%
 
 - Performances
 scored 95%
+
+Bugs
+During the development of this site I encountered a number of different bugs that have been now been fixed. A few notable bugs include the following:
+
+During testing it was highlighted that a user could enter empty spaces and submit the forms. I search online and adapted my code based on information using the pattern attribute class="validate" and ensuring all fields were required. users can see a small text message advising them on how to fill the form incase they have gotten it wrong
