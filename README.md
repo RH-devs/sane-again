@@ -190,10 +190,10 @@ The home page of the site features a title and an introduction with an explanati
 -  As a logged in visitor to the website, I want to be able to like blog posts.
 - As a logged in visitor to the website, I want to be given visual confirmation when I comment that it has been sent for admin's approval.
 
-* Admin
-- As an admin, I want to be able to approve or delete any comments. When an admin is logged in, the edit and delete buttons are available to them on all blogs allowing then to edit or delete any inappropriate comments.
-- As an admin, I want to be able to easily add, edit or delete categories within in the site rather than having to access MongoDB.
-- When an admin is logged in a new nav item is added called Categories. Clicking on this page allows an admin to view exisiting catgories, as well as edit or delete them. Additionally there is an add category button allowing then to add a new category on the front end.
+* Admin logged into the Admin site
+- As an admin, I want to be able to approve or delete any comments. When an admin is logged in, the edit and delete buttons are available to them on all blogs allowing then to approve or delete any inappropriate comments.
+- As an admin, I want to be able to easily add, edit or delete posts.
+- As an admin, i want to be able to verify users signing up.
 
 __Functionality Test Cases__
 
@@ -212,23 +212,22 @@ Created by
 published date
 - footer with quick links info , logo and copyright.
 * Login
-While logged in, make sure you can see all blogs and that any blogs that was created by you, now has the edit and delete button on them.
-while logged in , make sure you can see blogs written by you on your profile page.
-While logged in as an admin, make sure you can view all blogs and blog categories and that all categories blogs now have the edit and delete button. so the admin may delete inappropriate blogs created by users but may not edit blogs created by other users.
-admin can delete and approve comments created by him /her
-admin can also create and edit blog posts
+- While logged in, make sure you can see all blogs posts with creator's name, date posted with time and you can comment and like..
+- While logged in as an admin,you can create and edit blog posts.
+- admin can delete and approve comments created by users
+
 
 
 ## Lighthouse testing
 
-- Accessibility
-scored 84%
+__Accessibility__
+* scored 84%
 
-- SEO
-scored 80%
+__SEO__
+* scored 80%
 
-- Best practices
-scored 92%
+__Best practices__
+* scored 92%
 
 - Performances
 scored 95%
@@ -237,7 +236,7 @@ __Bugs__
 
 During the development of this site I encountered a number of different bugs that have been now been fixed. A few notable bugs include the following:
 
-During testing it was highlighted that a user could enter empty spaces and submit the forms. I search online and adapted my code based on information using the pattern attribute class="validate" and ensuring all fields were required. users can see a small text message advising them on how to fill the form incase they have gotten it wrong.
+During testing it was highlighted that a user could enter empty spaces and submit the forms. I search online and adapted my code based on information using the pattern validate class and ensuring all fields were required. users can see a small text message advising them on how to fill the form incase they have gotten it wrong.
 
 ## Technology Configuration
 
@@ -286,61 +285,32 @@ __Cloning__
 
 This project is hosted on Heroku. It's been deployed using the following steps:
 
-Sign up (new user) or sign in to Heroku account. I already had an account from previous projects, so only needed to sign in.
-Click the button at the top right that says "New", select "Create new app" in the dropdown.
-Choose an app name. Caution! This must be unique!
-Select your region. In my case, this is Europe.
-You'll be redirected to the Deploy tab of the new app.
-Go to Deployment method. Select your prefered deployment method. As my code was already on Github, I chose the "Connect to Github" option. The following steps will be specific to this option.
-Sign in to your Github account to allow Heroku access to repositories.
-Search for your repo name. If you can't remember the specific spelling of the name, leave the input field blank and click "Search" to get a list of all your repos.
-When you've found your repo in the list, click the "Connect" button.
-You now have the choice to enable automatic deploys or deploy manually.
-Your project will need to contain the following in order for Heroku to deploy it:
+- Sign up (new user) or sign in to Heroku account. I already had an account from previous projects, so only needed to sign in.
+- Click the button at the top right that says "New", select "Create new app" in the dropdown.
+- Choose an app name. Caution! This must be unique!
+- Select your region. In my case, this is Europe.
+- You'll be redirected to the Deploy tab of the new app.
+- Go to Deployment method. Select your prefered deployment method. As my code was already on Github, I chose the "Connect to Github" option. The following steps will be specific to this option.
+- Sign in to your Github account to allow Heroku access to repositories.
+- Search for your repo name. If you can't remember the specific spelling of the name, leave the input field blank and click "Search" to get a list of all your repos.
+- When you've found your repo in the list, click the "Connect" button.
+- You now have the choice to enable automatic deploys or deploy manually.
+- Your project will need to contain the following in order for Heroku to deploy it:
 a Procfile: this specifies the commands that are executed by the app on startup. You can use a Procfile to declare a variety of process types, including:
-
 Your app’s web server
 Multiple types of worker processes
 A singleton process, such as a clock
 Tasks to run before a new release is deployed.
-In the case of this project, the Procfile contains only a single line:
-
-echo web: python app.py
-a requirements.txt file. This tells Heroku which dependencies need to be installed in order for the project to run. It's created by using the command pip install + the name of any dependencies you have (for example, Flask needs to be installed for this project) in the terminal of your prefered editor, followed by the command pip freeze > requirements.txt which will write the installed dependencies to a text file which Heroku then installs using pip install requirements.txt.
-
-Go to settings in the Heroku tab. Click "Reveal Config Vars". Add the relevant environment variables you've used in your project to the Config Vars so Heroku can access them. Specifically, for this particular project, that means the following Config Vars were added:
-DEBUG (set to False to turn off Debug mode in the deployed version. Locally, in development, this variable was set to True.)
-Deployment
-This project is hosted on Heroku. It's been deployed using the following steps:
-
-Sign up (new user) or sign in to Heroku account. I already had an account from previous projects, so only needed to sign in.
-Click the button at the top right that says "New", select "Create new app" in the dropdown.
-Choose an app name. Caution! This must be unique!
-Select your region. In my case, this is Europe.
-You'll be redirected to the Deploy tab of the new app.
-Go to Deployment method. Select your prefered deployment method. As my code was already on Github, I chose the "Connect to Github" option. The following steps will be specific to this option.
-Sign in to your Github account to allow Heroku access to repositories.
-Search for your repo name. If you can't remember the specific spelling of the name, leave the input field blank and click "Search" to get a list of all your repos.
-When you've found your repo in the list, click the "Connect" button.
-You now have the choice to enable automatic deploys or deploy manually.
-Your project will need to contain the following in order for Heroku to deploy it:
-a Procfile: this specifies the commands that are executed by the app on startup. You can use a Procfile to declare a variety of process types, including:
-
-Your app’s web server
-Multiple types of worker processes
-A singleton process, such as a clock
-Tasks to run before a new release is deployed.
-In the case of this project, the Procfile contains only a single line:
-
+- In the case of this project, the Procfile contains only a single line:
 echo web: python app.py
 a requirements.txt file. This tells Heroku which dependencies need to be installed in order for the project to run. It's created by using the command pip install + the name of any dependencies you have (for example, Flask needs to be installed for this project) in the terminal of your prefered editor, followed by the command pip freeze > requirements.txt which will write the installed dependencies to a text file which Heroku then installs using pip install requirements.txt.
 
 - Go to settings in the Heroku tab. Click "Reveal Config Vars". Add the relevant environment variables you've used in your project to the Config Vars so Heroku can access them. Specifically, for this particular project, that means the following Config Vars were added:
 - DEBUG (set to False to turn off Debug mode in the deployed version. Locally, in development, this variable was set to True.)
-DISABLE_COLLECTSTATIC - This should be removed before the final deployment.
-CLOUDINARY_URL
-DATABASE_URL
-SECRET_KEY
+- DISABLE_COLLECTSTATIC - This should be removed before the final deployment.
+- CLOUDINARY_URL
+- DATABASE_URL
+- SECRET_KEY
 - Check the activity tab. The two most recent items in the list should read "Deployed" and "Build Succeeded" in their status.
 - Click "Open App" in the top right side if this is the case, this will take you to the live site of the Blog It.
 Check the activity tab. The two most recent items in the list should read "Deployed" and "Build Succeeded" in their status.
