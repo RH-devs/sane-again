@@ -241,7 +241,8 @@ During testing it was highlighted that a user could enter empty spaces and submi
 
 ## Technology Configuration
 
-Heroku Postgres
+__Heroku Postgres__
+
 Heroku Postgres was used as the database to store the users details to set up Heroku  follow the steps below
 
 - You will need to sign up to Heroku
@@ -250,10 +251,108 @@ Heroku Postgres was used as the database to store the users details to set up He
 - Go to the addons box is just search for Postgres, Select the Hobby Dev - Free plan and click Provision:
 - Then add Heroku Postgres to your project.
 
+### Forking
 
-Go back to the cluster overview
-Click the CONNECT button.
-Select 'connect your application'
-Select your language/ driver (I used Python 3.6 or later)
-Copy the connection string and change the details.
-Set the cluster name, collection name, URI connection string and password as environmental - see Configuration to set up your application configurations
+__Forking the GitHub Repository__
+
+By forking the GitHub Repository, you can make a copy of the original repository in your own GitHub account. This means we can view or make changes without making the changes affecting the original.
+
+- Log into GitHub and locate the GitHub Repository.
+- At the top of the Repository there is a "Fork" button about the "Settings" button on the menu.
+- You should now have a new copy of the original repository in your own GitHub account.
+- You will need to install the requirements.txt using the following command the command line pip3 install -r requirements.txt
+- You will need to set up your local environments and key value pairs for deployment
+
+__Cloning__
+- Making a Local Clone
+
+- Log into your GitHub then find the gitpod repository
+
+- Under the repository name there is a button that says, "Clone or download". Click on this button.
+
+- If cloning with HTTPS "Clone with HTTPS", copy this link.
+
+- Open Gitbash
+
+- Change the current working directory to the location where you want the cloned directory to be.
+
+- Type git clone, and then paste the URL you copied earlier.
+
+- You will need to install the requirements.txt using the following command the command line pip3 install -r requirements.txt
+
+- You will need to set up your local environments and key value pairs for deployment and running the application in your local environment.
+
+# Deployment
+
+This project is hosted on Heroku. It's been deployed using the following steps:
+
+Sign up (new user) or sign in to Heroku account. I already had an account from previous projects, so only needed to sign in.
+Click the button at the top right that says "New", select "Create new app" in the dropdown.
+Choose an app name. Caution! This must be unique!
+Select your region. In my case, this is Europe.
+You'll be redirected to the Deploy tab of the new app.
+Go to Deployment method. Select your prefered deployment method. As my code was already on Github, I chose the "Connect to Github" option. The following steps will be specific to this option.
+Sign in to your Github account to allow Heroku access to repositories.
+Search for your repo name. If you can't remember the specific spelling of the name, leave the input field blank and click "Search" to get a list of all your repos.
+When you've found your repo in the list, click the "Connect" button.
+You now have the choice to enable automatic deploys or deploy manually.
+Your project will need to contain the following in order for Heroku to deploy it:
+a Procfile: this specifies the commands that are executed by the app on startup. You can use a Procfile to declare a variety of process types, including:
+
+Your app’s web server
+Multiple types of worker processes
+A singleton process, such as a clock
+Tasks to run before a new release is deployed.
+In the case of this project, the Procfile contains only a single line:
+
+echo web: python app.py
+a requirements.txt file. This tells Heroku which dependencies need to be installed in order for the project to run. It's created by using the command pip install + the name of any dependencies you have (for example, Flask needs to be installed for this project) in the terminal of your prefered editor, followed by the command pip freeze > requirements.txt which will write the installed dependencies to a text file which Heroku then installs using pip install requirements.txt.
+
+Go to settings in the Heroku tab. Click "Reveal Config Vars". Add the relevant environment variables you've used in your project to the Config Vars so Heroku can access them. Specifically, for this particular project, that means the following Config Vars were added:
+DEBUG (set to False to turn off Debug mode in the deployed version. Locally, in development, this variable was set to True.)
+Deployment
+This project is hosted on Heroku. It's been deployed using the following steps:
+
+Sign up (new user) or sign in to Heroku account. I already had an account from previous projects, so only needed to sign in.
+Click the button at the top right that says "New", select "Create new app" in the dropdown.
+Choose an app name. Caution! This must be unique!
+Select your region. In my case, this is Europe.
+You'll be redirected to the Deploy tab of the new app.
+Go to Deployment method. Select your prefered deployment method. As my code was already on Github, I chose the "Connect to Github" option. The following steps will be specific to this option.
+Sign in to your Github account to allow Heroku access to repositories.
+Search for your repo name. If you can't remember the specific spelling of the name, leave the input field blank and click "Search" to get a list of all your repos.
+When you've found your repo in the list, click the "Connect" button.
+You now have the choice to enable automatic deploys or deploy manually.
+Your project will need to contain the following in order for Heroku to deploy it:
+a Procfile: this specifies the commands that are executed by the app on startup. You can use a Procfile to declare a variety of process types, including:
+
+Your app’s web server
+Multiple types of worker processes
+A singleton process, such as a clock
+Tasks to run before a new release is deployed.
+In the case of this project, the Procfile contains only a single line:
+
+echo web: python app.py
+a requirements.txt file. This tells Heroku which dependencies need to be installed in order for the project to run. It's created by using the command pip install + the name of any dependencies you have (for example, Flask needs to be installed for this project) in the terminal of your prefered editor, followed by the command pip freeze > requirements.txt which will write the installed dependencies to a text file which Heroku then installs using pip install requirements.txt.
+
+- Go to settings in the Heroku tab. Click "Reveal Config Vars". Add the relevant environment variables you've used in your project to the Config Vars so Heroku can access them. Specifically, for this particular project, that means the following Config Vars were added:
+- DEBUG (set to False to turn off Debug mode in the deployed version. Locally, in development, this variable was set to True.)
+DISABLE_COLLECTSTATIC - This should be removed before the final deployment.
+CLOUDINARY_URL
+DATABASE_URL
+SECRET_KEY
+- Check the activity tab. The two most recent items in the list should read "Deployed" and "Build Succeeded" in their status.
+- Click "Open App" in the top right side if this is the case, this will take you to the live site of the Blog It.
+Check the activity tab. The two most recent items in the list should read "Deployed" and "Build Succeeded" in their status.
+- Click "Open App" in the top right side if this is the case, this will take you to the live site of the ![sane-again](https://sane-again.herokuapp.com/).
+
+* You can also deploy on CLI using the instructions below:
+- Run the command heroku login -i and login when prompted. Then run the following command: 'heroku create your _app_name_here' to create a new app, replacing your_new_app_here with your preferred app name. This will create a new Heroku app and link it to your Gitpod terminal.
+- You can then access the app through the Heroku Dashboard and setup your config vars.
+
+* If you already have an app created on Heroku and want to deploy using the CLI, you can go through the steps below:
+- Run the command heroku login -i and login when prompted. Then run the following command: 'heroku git:remote -a your _app_name_here' and replace your_app_name_here with the name of your Heroku app. This will link the app to your Gitpod terminal.
+- Afer linking your app to the workspace with one of the above steps, you can then deploy new versions of the app by running the command 'git push heroku main' and your app will be dployed to Heroku.
+
+
+
