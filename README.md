@@ -36,13 +36,17 @@ __A typical user of this site should do the following:__
 
 * As a User, i should be able to Check all posts list
 
+* As a User, i should be able to view paginated posts on the homepage.
+
 __A new user of this site should do the following:__
 
 * As a new User, i should be able to register an account
 
 * As a new User, i should be able to Select a Post
 
-* As a new User, i should be able to Check all posts list
+* As a new User, i should be able to Check all posts list.
+
+* As a new User, i should be able to view paginated posts on the homepage.
 
 * As a new user to the website, I want to understand the purpose of the site and how to interact with it.
 
