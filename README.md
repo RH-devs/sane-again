@@ -31,6 +31,9 @@ Database Diagram:
 This was done using the following illustrations:
 
 ![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/database_diagram.PNG)
+
+__Database Design__
+The Database design was based on the following
 ![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/databbase.PNG)
 
 
