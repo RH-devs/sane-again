@@ -254,6 +254,7 @@ __Performances__
 * scored 97%
 
 __For one of the posts__
+
 ![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/lighthouse.PNG)
 
 
