@@ -22,6 +22,14 @@ The wireframes were designed using Balsamiq wireframes and it captures the  page
 - Post layout
 ![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/post.PNG)
 
+# Agile Develpoment Process
+
+I used Kanban on Github to track and create issues/user stories. It can be viewed selecting the project/issues tab on my repository for this project.
+
+Database Diagram:
+
+![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/database_diagram.PNG)
+
 
 __User Stories__
 
