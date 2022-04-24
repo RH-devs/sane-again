@@ -139,10 +139,12 @@ The Log in page allows registered user to log in to their account in order to ma
 
 __Admin Only__
 
-* Categories
-This is an admin only area and allows an admin to create, edit and delete posts on the front end. This page displays a list of categories available to users, the categories have an edit and delete icons to allow an admin to either make edits to a category or to delete one. The page also has an 'Add Category' button to allow an admin to create a new category.
+* Admin Site
+This is an admin only area and allows an admin to create, edit and delete posts on the front end. This page displays a list of categories available to users, the categories have an edit and delete icons to allow an admin to either make edits to various categories or to delete one. The page also has an 'Add Post' button to allow an admin to create a new Posts.
 
-* Database Design
+![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/django.PNG)
+
+* Database
 All user generated content is stored in Postgres linked in Heroku. 
 
 
