@@ -10,6 +10,16 @@ Most people has got something bothering to say or even have been silently depres
 
 ![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/saneagain_mockup.png)
 
+
+## Wireframes
+The wireframes were designed using Balsamiq wireframes and it captures the  pages of the blog will look.
+
+![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/Homepage.PNG)
+![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/register.PNG)
+![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/login.PNG)
+![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/post.PNG)
+
+
 __User Stories__
 
 __An admin of this site should do the following:__
@@ -154,11 +164,10 @@ __Front End__
 
 __Backend__
 * Heroku
-* Postgres 
+* Heroku Postgres 
 * Beautifier - for helping to keep code tidy
-* Random Key Gen - to generate a random secret key
 * Power Mapper to check for browser compatibility
-* Kanban for Project Planning
+* Kanban on Github for Project Planning
 * Balsamiq wireframes - for planning of site flow, creating wire frames and general mind mapping
 
 ## Testing
