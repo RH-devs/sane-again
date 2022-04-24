@@ -13,10 +13,13 @@ Most people has got something bothering to say or even have been silently depres
 
 ## Wireframes
 The wireframes were designed using Balsamiq wireframes and it captures the  pages of the blog will look.
-
+- Homepage
 ![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/Homepage.PNG)
+- Register/Signup
 ![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/register.PNG)
+- Login
 ![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/login.PNG)
+- Post layout
 ![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/post.PNG)
 
 
@@ -247,10 +250,10 @@ __SEO__
 __Best practices__
 * scored 92%
 
-- Performances
+__Performances__
 * scored 97%
 
-* For one of the posts:
+__For one of the posts__
 ![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/lighthouse.PNG)
 
 
@@ -260,7 +263,7 @@ During the development of this site I encountered a number of different bugs tha
 
 During testing it was highlighted that a user could enter empty spaces and submit the forms. I search online and adapted my code based on information using the pattern validate class and ensuring all fields were required. users can see a small text message advising them on how to fill the form incase they have gotten it wrong.
 
-Unfixed Bugs - It is observed that 
+Unfixed Bugs - It is observed that contents in the homeoage were overlapping on mobile. Due to submission timing, it wasn't corrected but it will be done in future.
 
 ## Technology Configuration
 
