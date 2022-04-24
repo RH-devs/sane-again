@@ -373,7 +373,7 @@ I based the layout for the site on this project from I think i can therefore blo
 
 * Wonderful people of the Slack community too.
 
-* A final thank to my mentor Brian Macharia who has advised and guided me through the Milestone 3 project which helpful to create this 4th project as we could meet unfortunatley due to time schedule.
+* A final thank to my mentor Brian Macharia who has advised and guided me through the Milestone 3 project which helpful to create this 4th project as we could not meet unfortunatley due to time schedule.
 
 * Summary- i had wished to implement several features for this site to make full functional and usefull for the community,
 But with limited time and also not enough knowledge of how to achieve what i wanted. For now i hope this is enough as i continue to improve on my skills and update this project in the future.
