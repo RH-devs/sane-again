@@ -236,23 +236,31 @@ published date
 
 ## Lighthouse testing
 
+I generated a lighthouse report for the deployed site through the Google Chrome Dev Tools. I generated both a desktop and mobile report
+
 __Accessibility__
 * scored 84%
 
 __SEO__
-* scored 80%
+* scored 83%
 
 __Best practices__
 * scored 92%
 
 - Performances
-scored 95%
+* scored 97%
+
+* For one of the posts:
+![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/lighthouse.PNG)
+
 
 __Bugs__
 
 During the development of this site I encountered a number of different bugs that have been now been fixed. A few notable bugs include the following:
 
 During testing it was highlighted that a user could enter empty spaces and submit the forms. I search online and adapted my code based on information using the pattern validate class and ensuring all fields were required. users can see a small text message advising them on how to fill the form incase they have gotten it wrong.
+
+Unfixed Bugs - It is observed that 
 
 ## Technology Configuration
 
