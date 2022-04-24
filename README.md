@@ -28,7 +28,10 @@ I used Kanban on Github to track and create issues/user stories. It can be viewe
 
 Database Diagram:
 
+This was done using the following illustrations:
+
 ![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/database_diagram.PNG)
+![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/django.PNG)
 
 
 __User Stories__
