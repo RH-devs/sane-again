@@ -336,13 +336,13 @@ Check the activity tab. The two most recent items in the list should read "Deplo
 __Content__
 The content of the site was written by myself and inspired by the idea of creating a social blogging site for People with depression as i feel they need to get more involved in the society. I belive there is always a room for improvement as i improve on my skills and make it fully functional with time.
 
-Code for my navigation and footer was from materialize navbar and customised to my liking.
-I adapted the code from materialize documentation examples Bootstrap documenation for the main structure of the create blog form.
+I adapted the code from materialize documentation examples Bootstrap and django documentation for the main structure of the create blog form.
+
 * Media
-All pictures were taken from pexels.com 
+All pictures were taken from pexels.com and balsamiq for wireframes.
 
 * Acknowledgements
-I based the layout for the site on this I think i can therefore blog project-code institute.
+I based the layout for the site on this project from I think i can therefore blog project-code institute.
 
 * My color scheme for this site was based on different shades of grey,black,cyan and blue. I wanted a colour that is easy on the eyes as viewers may spend hours of the screen.
 
@@ -356,34 +356,4 @@ I based the layout for the site on this I think i can therefore blog project-cod
 
 * Summary- i had wished to implement several features for this site to make full functional and usefull for the community,
 But with limited time and also not enough knowledge of how to achieve what i wanted. For now i hope this is enough as i continue to improve on my skills and update this project in the future.
-
-
-# Credits
-__Content__
-The content of the site was written by myself and inspired by the idea of creating a social blogging site for People with depression as i feel they need to get more involved in the society. I belive there is always a room for improvement as i improve on my skills and make it fully functional with time.
-
-Code for my navigation and footer was from materialize navbar and customised to my liking.
-I adapted the code from materialize documentation examples Bootstrap documenation for the main structure of the create blog form.
-* Media
-All pictures were taken from pexels.com 
-
-* Acknowledgements
-I based the layout for the site on this I think i can therefore blog project-code institute.
-
-* My color scheme for this site was based on different shades of grey,black,cyan and blue. I wanted a colour that is easy on the eyes as viewers may spend hours of the screen.
-
-* I would also like to thank the team at Tutor support, who helped me solve some deployment issues I encountered due to the recent comprise attack on heroku.
-
-* Full stack whattsapp group who are available to help fix an issue.
-
-* Wonderful people of the Slack community too.
-
-* A final thank to my mentor gbenga_mentor who has advised and guided me through the Milestone 3 project which helpful to create this 4th project as we could meet unfortunatley due to time schedule.
-
-* Summary- i had wished to implement several features for this site to make full functional and usefull for the community,
-But with limited time and also not enough knowledge of how to achieve what i wanted. For now i hope this is enough as i continue to improve on my skills and update this project in the future.
-
-
-
-
 
