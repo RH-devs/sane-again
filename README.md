@@ -31,7 +31,7 @@ Database Diagram:
 This was done using the following illustrations:
 
 ![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/database_diagram.PNG)
-![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/django.PNG)
+![sane-again](https://github.com/RH-devs/SANE-AGAIN/blob/main/static/images/databbase.PNG)
 
 
 __User Stories__
