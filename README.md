@@ -357,7 +357,7 @@ Check the activity tab. The two most recent items in the list should read "Deplo
 __Content__
 The content of the site was written by myself and inspired by the idea of creating a social blogging site for People with depression as i feel they need to get more involved in the society. I belive there is always a room for improvement as i improve on my skills and make it fully functional with time.
 
-I adapted the code from materialize documentation examples Bootstrap and django documentation for the main structure of the create blog form.
+I adapted the code from documentation examples of Bootstrap and django documentation for the main structure of the create blog form.
 
 * Media
 All pictures were taken from pexels.com and balsamiq for wireframes.
@@ -365,7 +365,7 @@ All pictures were taken from pexels.com and balsamiq for wireframes.
 * Acknowledgements
 I based the layout for the site on this project from I think i can therefore blog project-code institute.
 
-* My color scheme for this site was based on different shades of grey,black,cyan and blue. I wanted a colour that is easy on the eyes as viewers may spend hours of the screen.
+* My color scheme for this site was based on different shades of grey,black, and blue. I wanted a colour that is easy on the eyes as viewers may spend hours of the screen.
 
 * I would also like to thank the team at Tutor support, who helped me solve some deployment issues I encountered due to the recent comprise attack on heroku.
 
