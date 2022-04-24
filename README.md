@@ -321,7 +321,8 @@ a requirements.txt file. This tells Heroku which dependencies need to be install
 - Check the activity tab. The two most recent items in the list should read "Deployed" and "Build Succeeded" in their status.
 - Click "Open App" in the top right side if this is the case, this will take you to the live site of the Blog It.
 Check the activity tab. The two most recent items in the list should read "Deployed" and "Build Succeeded" in their status.
-- Click "Open App" in the top right side if this is the case, this will take you to the live site of the ![sane-again](https://sane-again.herokuapp.com/).
+- Click "Open App" in the top right side if this is the case, this will take you to the live site 
+(https://sane-again.herokuapp.com/)
 
 * You can also deploy on CLI using the instructions below:
 - Run the command heroku login -i and login when prompted. Then run the following command: 'heroku create your _app_name_here' to create a new app, replacing your_new_app_here with your preferred app name. This will create a new Heroku app and link it to your Gitpod terminal.
@@ -355,7 +356,6 @@ I based the layout for the site on this I think i can therefore blog project-cod
 
 * Summary- i had wished to implement several features for this site to make full functional and usefull for the community,
 But with limited time and also not enough knowledge of how to achieve what i wanted. For now i hope this is enough as i continue to improve on my skills and update this project in the future.
-
 
 
 # Credits
