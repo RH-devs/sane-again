@@ -53,7 +53,10 @@
                     
                     {% endif %}
                 </ul>
-                
+                {% if user.is_authenticated %}
+                <span class="navbar-text">
+                    <i class="far fa-user"></i> {{ user.username }}
+                </span>
             </div>
         </div>
     </nav>
