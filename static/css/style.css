@@ -1,5 +1,7 @@
 body {
-    background-color: #fff;
+    background-color: #F9FAFC;
+    max-width: 125rem;
+    margin: 0 auto;
 }
 
 .brand {
@@ -9,7 +11,29 @@ body {
     color: #23BBBB;
 }
 
+.smiley {
+    background-image: url("https://res.cloudinary.com/saneagain/image/upload/v1643060859/cld-sample.jpg");
+    background-size: cover;
+    padding-top: 1%;
+    padding-bottom: 25%;
+}
 
+.welcome-text {
+    padding: 1rem 0.5rem;
+    background-color: rgba(219, 224, 224, 0.6);
+    text-align: center;
+    color: var(--white);
+    margin: 0 10%;
+    font-family: "Roboto", sans-serif
+}
+
+.welcome-texttwo {
+    padding: 1rem 0.5rem;
+    text-align: center;
+    color: var(--white);
+    margin: 0 10%;
+    font-family: "Roboto", sans-serif
+}
 .light-bg {
     background-color: #fff;
 }
@@ -109,6 +133,10 @@ body {
     color: #23BBBB;
 }
 
+.auth-block form {
+    max-width: 18.75rem;
+}
+
 .link {
     color: #23BBBB;
     text-decoration: none;
@@ -133,3 +161,14 @@ body {
     border: none;
 }
 
+.full-background {
+    background-image: url("https://res.cloudinary.com/saneagain/image/upload/v1643060859/cld-sample.jpg");
+    background-size: 125rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.auth-error-msg {
+    color: rgb(94, 255, 0);
+    font-weight: bold;
+    font-size: large;
+}
